@@ -1,0 +1,20 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org",
+    "myVocab": "http://example.org/myVocab#",
+    "PlasticSurgeryProvider": "myVocab:PlasticSurgeryProvider",
+    "proceduresPerformed": "myVocab:proceduresPerformed"
+  },
+  "@graph": [{
+    "@id": "myVocab:PlasticSurgeryProvider",
+    "@type": "rdfs:Class",
+    "rdfs:label": "Plastic Surgery Provider",
+    "rdfs:comment": "..."
+  }, {
+    "@id": "myVocab:proceduresPerformed",
+    "@type": "rdf:Property",
+    "rdfs:label": "procedures performed",
+    "rdfs:comment": "The Medical Procedures performed by this Plastic Surgery Provider",
+    "rdfs:domain": "myVocab:PlasticSurgeryProvider"
+  }]
+}
